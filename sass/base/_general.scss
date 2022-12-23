@@ -1,0 +1,44 @@
+[class*='__container'] {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1220px;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+
+    &__nav {
+    }
+}
+.menu {
+
+    &_left {
+    }
+
+    &_right {
+    }
+
+    &__item {
+    }
+
+    &__link {
+    }
+}
+.logo {
+
+    &__img {
+    }
+}

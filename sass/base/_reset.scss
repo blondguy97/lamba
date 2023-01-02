@@ -28,6 +28,10 @@ footer,header,hgroup,menu,nav,section {
     display:block;
 }
 
+ul {
+    list-style-type: none;
+}
+
 nav ul {
     list-style:none;
 }
@@ -94,4 +98,9 @@ hr {
 
 input, select {
     vertical-align:middle;
+}
+
+img {
+    object-fit: cover;
+    max-width: 100%;
 }

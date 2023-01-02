@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script>history.scrollRestoration = "manual"</script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <title>Lamba</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -17,16 +17,16 @@
       <nav class="header__nav">
         <ul class="menu menu_left">
           <li class="menu__item">
-            <a class="menu__link" href="#">О гонке</a>
+            <a class="menu__link" href="#about">О гонке</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Трек</a>
+            <a class="menu__link" href="#track">Трек</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Lamborghini Super trofeo</a>
+            <a class="menu__link" href="#trofeo">Lamborghini Super trofeo</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Новости</a>
+            <a class="menu__link" href="#blog">Новости</a>
           </li>
         </ul>
 
@@ -36,13 +36,13 @@
 
         <ul class="menu menu_right">
           <li class="menu__item">
-            <a class="menu__link" href="#">Купить билеты</a>
+            <a class="menu__link open-popup" href="#popup">Купить билеты</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Смотреть онлайн</a>
+            <a class="menu__link" href="#watch-video">Смотреть видео</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Контакты</a>
+            <a class="menu__link" href="#contacts">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -59,17 +59,17 @@
             <span>3-6 ноября</span>
           </h2>
           <p class="promo__text">автодром Портимао,Португалия</p>
-          <a class="promo__arrow" href="#info">
+          <a class="promo__arrow" href="#about">
             <img class="promo__arrow-img" src="img/promo/arrow-down.svg" alt="">
           </a>
         </div>
       </div>
     </section>
 
-    <section class="info" id="info">
+    <section class="info" id="about">
       <div class='info__container'>
         <div class="info__part info__part_first">
-          <h3 class="info__title">
+          <h3 class="info__title thin-title">
             СУПЕР ТРОФЕО МИРОВОЙ ФИНАЛ
           </h3>
           <div class="info__text-box">
@@ -90,7 +90,7 @@
         </div>
         <div class="info__part info__part_second">
           <div class="info__content">
-            <h3 class="info__title">КОМАНДЫ СУПЕР ТРОФЕО</h3>
+            <h3 class="info__title thin-title">КОМАНДЫ СУПЕР ТРОФЕО</h3>
             <p class="info__text">
               Все автомобили, которые участвуют в чемпионатах Lamborghini Super Trofeo, управляются частными командами,
               которые используют свой опыт для тонкой настройки их для водителей. Для каждого континентального
@@ -107,7 +107,7 @@
         </div>
         <div class="info__part info__part_third">
           <div class="info__content">
-            <h3 class="info__title">календарь сезона Super Trofeo Europe 2022 года</h3>
+            <h3 class="info__title thin-title">календарь сезона Super Trofeo Europe 2022 года</h3>
             <p class="info__text">
               14 в истории серии GT, посвященный автомобилям Lamborghini Huracan Super Trofeo Evo. Шесть этапов, в общей
               сложности 12 гонок и 600 минут соревнований будут разыграны на некоторых из самых престижных трасс Европы.
@@ -155,9 +155,9 @@
       </div>
     </section>
 
-    <section class="track">
+    <section class="track" id="track">
       <div class='track__container'>
-        <h3 class="track__title">
+        <h3 class="track__title thin-title">
           ТРЕК ПОРТИМАО
         </h3>
         <p class="track__text">
@@ -170,12 +170,12 @@
       </div>
     </section>
 
-    <section class="evo">
+    <section class="evo" id="trofeo">
       <div class="evo-black">
         <div class='evo-black__container'>
           <div class="evo-black__inner">
             <div class="evo-black__info">
-              <h3 class="evo-black__title">СУПЕР ТРОФЕО ЭВО</h3>
+              <h3 class="evo-black__title thin-title">СУПЕР ТРОФЕО ЭВО</h3>
               <div class="evo-black__box">
                 <p class="evo-black__descr">
                   Новый Huracán Super Trofeo EVO достигает еще больших высот, чем его прославленный предшественник,
@@ -250,25 +250,195 @@
               Среди наиболее очевидных изменений в обвесе Lamborghini Huracan Super Trofeo EVO — задний спойлер на
               заднем капоте и верхний воздухозаборник, которые делают его мгновенно узнаваемым для зрителей.
             </p>
-            <div class="evo-white__video">
-              <a class="evo-white__play-btn"  target="_blank" href="https://www.youtube.com/watch?v=nPslyUPQFPw">
+            <div class="evo-white__video" id="watch-video">
+              <a class="evo-white__play-btn" target="_blank" href="https://www.youtube.com/watch?v=nPslyUPQFPw">
                 <img class="evo-white__play-img" src="img/evo/play-btn.svg" alt="">
-                <span class="evo-white__online">смотреть онлайн</span>
+                <span class="evo-white__online">смотреть видео</span>
               </a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="blog" id="blog">
+      <div class='blog__container'>
+        <h3 class="blog__title thin-title">
+          БЛОГ
+        </h3>
+
+
+        <div class="blog-slider">
+          <div class="blog-slider__inner">
+            <div class="blog-slider__item">
+
+              <img class="blog-slider__img" src="img/blog/1.jpg" alt="">
+              <h3 class="blog-slider__title">НЕЛЬСОН ПИКЕ СТАЛ ПОБЕДИТЕЛЕМ ГРАНД-ФИНАЛА В ПОРТИМАНЕ</h3>
+              <p class="blog-slider__text">
+                Нельсон Пике-младший из Ansa Motorsports обеспечил возвращение титула Lamborghini Super Trofeo Grand
+                Finals в Северную Америку впервые с 2017 года после победы и второе место в паре 50-минутных гонок на
+                Autodromo Nacionale do Algarve в Портимане.Между тем, титул Pro-Am был подорван, поскольку Брайан Ортис
+                и Себастьян Карасо
+              </p>
+              <a class="blog-slider__more" href="#">читать подробнее...</a>
+            </div>
+            <div class="blog-slider__item">
+              <img class="blog-slider__img" src="img/blog/2.jpg" alt="">
+              <h3 class="blog-slider__title">НЕЛЬСОН ПИКЕ СТАЛ ПОБЕДИТЕЛЕМ ГРАНД-ФИНАЛА В ПОРТИМАНЕ</h3>
+              <p class="blog-slider__text">
+                Нельсон Пике-младший из Ansa Motorsports обеспечил возвращение титула Lamborghini Super Trofeo Grand
+                Finals в Северную Америку впервые с 2017 года после победы и второе место в паре 50-минутных гонок на
+                Autodromo Nacionale do Algarve в Портимане.Между тем, титул Pro-Am был подорван, поскольку Брайан Ортис
+                и Себастьян Карасо
+              </p>
+              <a class="blog-slider__more" href="#">читать подробнее...</a>
+            </div>
+            <div class="blog-slider__item">
+              <img class="blog-slider__img" src="img/blog/1.jpg" alt="">
+              <h3 class="blog-slider__title">НЕЛЬСОН ПИКЕ СТАЛ ПОБЕДИТЕЛЕМ ГРАНД-ФИНАЛА В ПОРТИМАНЕ</h3>
+              <p class="blog-slider__text">
+                Нельсон Пике-младший из Ansa Motorsports обеспечил возвращение титула Lamborghini Super Trofeo Grand
+                Finals в Северную Америку впервые с 2017 года после победы и второе место в паре 50-минутных гонок на
+                Autodromo Nacionale do Algarve в Портимане.Между тем, титул Pro-Am был подорван, поскольку Брайан Ортис
+                и Себастьян Карасо
+              </p>
+              <a class="blog-slider__more" href="#">читать подробнее...</a>
+            </div>
+            <div class="blog-slider__item">
+              <img class="blog-slider__img" src="img/blog/2.jpg" alt="">
+              <h3 class="blog-slider__title">НЕЛЬСОН ПИКЕ СТАЛ ПОБЕДИТЕЛЕМ ГРАНД-ФИНАЛА В ПОРТИМАНЕ</h3>
+              <p class="blog-slider__text">
+                Нельсон Пике-младший из Ansa Motorsports обеспечил возвращение титула Lamborghini Super Trofeo Grand
+                Finals в Северную Америку впервые с 2017 года после победы и второе место в паре 50-минутных гонок на
+                Autodromo Nacionale do Algarve в Портимане.Между тем, титул Pro-Am был подорван, поскольку Брайан Ортис
+                и Себастьян Карасо
+              </p>
+              <a class="blog-slider__more" href="#">читать подробнее...</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-quotes">
+          <div class="blog-quotes__inner">
+            <div class="blog-quotes__box">
+              <blockquote class="blog-quotes__blockquote blockquote">
+                <div class="blockquote__status">Чемпион Am</div>
+                <h3 class="blockquote__name">Анджей Левандовски</h3>
+                <p class="blockquote__descr">
+                  «Я очень доволен титулом, моей второй победой в Am и четвертой в Super Trofeo, мне очень приятно
+                  делать
+                  это в этом году, потому что уровень соревнований очень высок. Должен сказать, сегодня было довольно
+                  легко, так как я все время контролировал ситуацию».
+                </p>
+              </blockquote>
+              <blockquote class="blog-quotes__blockquote blockquote">
+                <div class="blockquote__status">Обладатель кубка Lamborghini</div>
+                <h3 class="blockquote__name">Жерар ван дер Хорст</h3>
+                <p class="blockquote__descr">
+                  «Я очень доволен титулом, моей второй победой в Am и четвертой в Super Trofeo, мне очень приятно
+                  делать
+                  это в этом году, потому что уровень соревнований очень высок. Должен Обладатель кубка Lamborghini
+                  добавил: «Здорово выиграть титул, спустя четыре года после последнего...
+                </p>
+              </blockquote>
+
+            </div>
+            <img class="blog-quotes__img" src="img/blog/blog-quotes-img.png" alt="">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
   </main>
 
 
-  <footer class="footer">
+  <footer class="footer" id="contacts">
+    <div class='footer__container'>
+      <h3 class="footer__title thin-title">контакты</h3>
+      <div class="footer-top">
+        <div class="footer-top__content">
+          <ul class="footer-top__info">
+            <li class="footer-top__item">
+              <h4 class="footer-top__title">ОБЩИЕ</h4>
+              <a class="footer-top__link" href="tel:351282405600">+(351) 282 405 600</a>
+              <a class="footer-top__link" href="tel:351282405697">+(351) 282 405 697</a>
+              <a class="footer-top__link" href="mailto:info@autodromodoalgarve.com">info@autodromodoalgarve.com</a>
+            </li>
+            <li class="footer-top__item">
+              <h4 class="footer-top__title">БИЛЕТЫ</h4>
+              <a class="footer-top__link" href="tel:351282405600">+(351) 282 405 600</a>
+              <a class="footer-top__link" href="mailto:info@autodromodoalgarve.com">tickets@autodromodoalgarve.com</a>
 
+            </li>
+          </ul>
+          <ul class="footer-top__social social">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img" src="img/footer/youtube.svg" alt="">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img" src="img/footer/inst.svg" alt="">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img" src="img/footer/facebook.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-top__address">
+          <h4 class="footer-top__title">АДРЕС</h4>
+          <address class="footer-top__text">Sitio do Escampadinho, Mexilhoeira Grande, 8500-148 Portimao, Portugal
+          </address>
+          <iframe class="footer-top__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.690013535044!2d-8.630516284555119!3d37.23133307986214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1b249a14a3de87%3A0x5eb2446732b74a50!2z0JDQu9Cz0LDRgNCy0LU!5e0!3m2!1sru!2sru!4v1672671554196!5m2!1sru!2sru"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <a class="footer-bottom__designer" href="#">Design by Varvara Prokopchuk</a>
+        <a class="footer-bottom__logo" href="#">
+          <img class="footer-bottom__img" src="img/footer/logo-small.svg" alt="">
+        </a>
+        <a class="footer-bottom__policy" href="#">
+          Политика конфиденциальности
+        </a>
+      </div>
+    </div>
   </footer>
 
+  <div class="popup-bg">
+    <div class="popup">
+      <svg class="popup__close close-popup" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 20 20" version="1.1">
+        <g id="surface1">
+          <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;"
+            d="M 10.007812 8.242188 L 16.613281 1.652344 C 17.105469 1.164062 17.894531 1.167969 18.382812 1.65625 C 18.871094 2.144531 18.871094 2.933594 18.378906 3.421875 L 11.777344 10.007812 L 18.378906 16.601562 C 18.867188 17.089844 18.867188 17.882812 18.378906 18.371094 C 17.890625 18.859375 17.097656 18.859375 16.609375 18.371094 L 10.007812 11.773438 L 3.402344 18.359375 C 2.914062 18.847656 2.121094 18.847656 1.636719 18.359375 C 1.148438 17.871094 1.148438 17.078125 1.636719 16.589844 L 8.238281 10.003906 L 1.644531 3.414062 C 1.15625 2.925781 1.15625 2.136719 1.644531 1.648438 C 2.128906 1.160156 2.921875 1.160156 3.410156 1.648438 Z M 10.007812 8.242188 " />
+        </g>
+      </svg>
+      <h4 class="popup__title">Ваша заявка</h4>
+      <form class="popup__form form-popup" action="">
+        <input class="form-popup__input" type="text" placeholder="Ваше имя">
+        <input class="form-popup__input" type="email" placeholder="Ваша эл. почта">
+        <input class="form-popup__input" id="mask-phone" type="tel" placeholder="Ваш номер телефона">
+        <button class="form-popup__btn" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="no-scroll"></div>
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/phone-mask.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 
 </html>
